@@ -1,6 +1,6 @@
 # sc4-custom-ordinance-host
 
-A DLL Plugin for SimCity 4 that new ordinances to be defined in ordinance exemplars.
+A DLL Plugin for SimCity 4 that allows new ordinances to be defined in ordinance exemplars.
 
 The plugin can be downloaded from the Releases tab: https://github.com/0xC0000054/sc4-custom-ordinance-host/releases
 
