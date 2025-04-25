@@ -24,5 +24,5 @@ It tests the  R§ Population Availability Condition (property id 0x6B23D800), an
 This exemplar uses the TGI 0x6534284A, 0xFD01A30F, 0xB5BAC3FC.     
 It tests the Lua-based availability contention (property id 0x6B23D830) and monthly income (0x6B23D930) properties.
 
-The Lua functions are defined in TGI 0xCA63E2A3, 0x4A5E8EF6, 0x179B832B, a copy of that file is also located [here](lua_functioons.lua).
+The Lua functions are defined in TGI 0xCA63E2A3, 0x4A5E8EF6, 0x179B832B, a copy of that file is also located [here](lua_functions.lua).
 
