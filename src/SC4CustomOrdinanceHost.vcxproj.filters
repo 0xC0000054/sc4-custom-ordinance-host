@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GZCOM">
+      <UniqueIdentifier>{5d77d34b-838a-4232-bd7d-3bfea48022e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GZCOM">
+      <UniqueIdentifier>{d01c4d03-356b-47da-b086-dcdb7fa393e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\monthly-income-factors">
+      <UniqueIdentifier>{fdb6cb42-ac6d-44c2-bac3-78f85749b506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\monthly-income-factors">
+      <UniqueIdentifier>{530ccaea-a2f5-4df6-903e-859617d1b230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\availability-conditions">
+      <UniqueIdentifier>{8498e8e8-2792-49b4-9a84-cd2d92f662b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\availability-conditions">
+      <UniqueIdentifier>{3a8ff914-41f2-48a8-b514-029630bfcace}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cIGZFrameWork.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cRZCOMDllDirector.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistResourceKeyFilterByType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PersistResourceKeyHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomOrdinance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalPointers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monthly-income-factors\IMonthlyIncomeFactor.h">
+      <Filter>Header Files\monthly-income-factors</Filter>
+    </ClInclude>
+    <ClInclude Include="monthly-income-factors\TotalResidentialPopulationIncomeFactor.h">
+      <Filter>Header Files\monthly-income-factors</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingCountProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="monthly-income-factors\BuildingCountIncomeFactor.h">
+      <Filter>Header Files\monthly-income-factors</Filter>
+    </ClInclude>
+    <ClInclude Include="monthly-income-factors\LuaFunctionIncomeFactor.h">
+      <Filter>Header Files\monthly-income-factors</Filter>
+    </ClInclude>
+    <ClInclude Include="monthly-income-factors\RCIGroupPopulationIncomeFactor.h">
+      <Filter>Header Files\monthly-income-factors</Filter>
+    </ClInclude>
+    <ClInclude Include="availability-conditions\IAvailabilityCondition.h">
+      <Filter>Header Files\availability-conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="GZStreamUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="availability-conditions\LuaFunctionAvailabilityCondition.h">
+      <Filter>Header Files\availability-conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="PopulationProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="availability-conditions\BuildingCountAvailabilityCondition.h">
+      <Filter>Header Files\availability-conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="availability-conditions\GameYearAvailabilityCondition.h">
+      <Filter>Header Files\availability-conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="availability-conditions\RCIGroupPopulationAvailabilityCondition.h">
+      <Filter>Header Files\availability-conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="ExemplarPropertyHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrdiancePropertyIDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RCIGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4App.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4City.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4Demand.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4DemandSimulator.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4FireProtectionSimulator.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4Ordinance.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4OrdinanceSimulator.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISC4PoliceSimulator.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISCExemplarPropertyHolder.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISCLua.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISCProperty.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISCPropertyHolder.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cISCResExemplar.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\gzcom-dll\include\cIGZCOM.h">
+      <Filter>Header Files\GZCOM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZCOMDllDirector.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZBaseString.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\StringResourceManager.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\SCPropertyUtil.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZBaseSystemService.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZBaseUnknown.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZBaseVariant.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZCellMap.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZMessage2.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cRZMessage2Standard.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cS3DVector3.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\cSCBaseProperty.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\SC4UI.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\gzcom-dll\src\SCLuaUtil.cpp">
+      <Filter>Source Files\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomOrdinanceHostDllDirector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PersistResourceKeyFilterByType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomOrdinance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monthly-income-factors\TotalResidentialPopulationIncomeFactor.cpp">
+      <Filter>Source Files\monthly-income-factors</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingCountProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="monthly-income-factors\BuildingCountIncomeFactor.cpp">
+      <Filter>Source Files\monthly-income-factors</Filter>
+    </ClCompile>
+    <ClCompile Include="monthly-income-factors\LuaFunctionIncomeFactor.cpp">
+      <Filter>Source Files\monthly-income-factors</Filter>
+    </ClCompile>
+    <ClCompile Include="monthly-income-factors\RCIGroupPopulationIncomeFactor.cpp">
+      <Filter>Source Files\monthly-income-factors</Filter>
+    </ClCompile>
+    <ClCompile Include="GZStreamUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="availability-conditions\LuaFunctionAvailabilityCondition.cpp">
+      <Filter>Source Files\availability-conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="PopulationProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="availability-conditions\BuildingCountAvailabilityCondition.cpp">
+      <Filter>Source Files\availability-conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="availability-conditions\GameYearAvailabilityCondition.cpp">
+      <Filter>Source Files\availability-conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="availability-conditions\RCIGroupPopulationAvailabilityCondition.cpp">
+      <Filter>Source Files\availability-conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="ExemplarPropertyHolder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="IgnoredWords.dic" />
+  </ItemGroup>
+</Project>
