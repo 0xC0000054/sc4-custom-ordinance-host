@@ -119,5 +119,6 @@ static const uint32_t kOrdinanceMonthlyIncomeFactorSchoolBuildingCount = 0x6B23D
 
 // The name of a Lua function that calculates the monthly income - String property.
 // This property takes precedence over all other monthly income factor properties.
-// Must have a unique name, take one number parameter, and return a number.
+// Must have a unique name, take the monthly constant income as a parameter, and
+// return the calculated monthly expense/income for the ordinance.
 static const uint32_t kOrdinanceMonthlyIncomeFactorLuaFunction = 0x6B23D930;
