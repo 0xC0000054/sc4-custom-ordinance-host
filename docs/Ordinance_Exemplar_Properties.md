@@ -20,24 +20,24 @@ These properties can be used to control when the game makes the ordinance availa
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
 | 0x28EBBC35 | Year Available | Uint32 | 0 | Year this ordinance becomes available. Must be greater than 2000 (SC4's starting year). |
-| 0x6B23D800 | R§ Population Availability Condition | Uint32 | 0 | The minimum R§ population for this ordinance to become available. |
-| 0x6B23D801 | R§§ Population Availability Condition | Uint32 | 0 | The minimum R§§ population for this ordinance to become available. |
-| 0x6B23D802 | R§§§ Population Availability Condition | Uint32 | 0 | The minimum R§§§ population for this ordinance to become available. |
-| 0x6B23D803 | Cs§ Population Availability Condition | Uint32 | 0 | The minimum Cs§ population for this ordinance to become available. |
-| 0x6B23D804 | Cs§§ Population Availability Condition | Uint32 | 0 | The minimum Cs§§ population for this ordinance to become available. |
-| 0x6B23D805 | Cs§§§ Population Availability Condition | Uint32 | 0 | The minimum Cs§§§ population for this ordinance to become available. |
-| 0x6B23D806 | Co§§ Population Availability Condition | Uint32 | 0 | The minimum Co§§ population for this ordinance to become available. |
-| 0x6B23D807 | Co§§§ Population Availability Condition | Uint32 | 0 | The minimum Co§§§ population for this ordinance to become available. |
-| 0x6B23D808 | IR Population Availability Condition | Uint32 | 0 | The minimum IR population for this ordinance to become available. |
-| 0x6B23D809 | ID Population Availability Condition | Uint32 | 0 | The minimum ID population for this ordinance to become available. |
-| 0x6B23D80A | IM Population Availability Condition | Uint32 | 0 | The minimum IM population for this ordinance to become available. |
-| 0x6B23D80B | IHT Population Availability Condition | Uint32 | 0 | The minimum IHT population for this ordinance to become available. |
-| 0x6B23D820 | Fire Station Count Availability Condition | Uint32 | 0 | The minimum number of fire stations for this ordinance to become available. |
-| 0x6B23D821 | Hospital Count Availability Condition | Uint32 | 0 | The minimum number of hospital buildings for this ordinance to become available. |
-| 0x6B23D822 | Jail Count Availability Condition | Uint32 | 0 | The minimum number of jails for this ordinance to become available. |
-| 0x6B23D823 | Police Station Count Availability Condition | Uint32 | 0 | The minimum number of police stations for this ordinance to become available. |
-| 0x6B23D824 | School Building Count Availability Condition | Uint32 | 0 | The minimum number of school buildings for this ordinance to become available. |
-| 0x6B23D830 | Lua Availability Condition Function | String | n/a | The name of a Lua function that determines when this ordinance becomes available. See the _Lua Availability Condition Function_ section below. |
+| 0x6B23D800 | Ordinance Availability: R§ Population | Uint32 | 0 | The minimum R§ population for this ordinance to become available. |
+| 0x6B23D801 | Ordinance Availability: R§§ Population | Uint32 | 0 | The minimum R§§ population for this ordinance to become available. |
+| 0x6B23D802 | Ordinance Availability: R§§§ Population | Uint32 | 0 | The minimum R§§§ population for this ordinance to become available. |
+| 0x6B23D803 | Ordinance Availability: Cs§ Population | Uint32 | 0 | The minimum Cs§ population for this ordinance to become available. |
+| 0x6B23D804 | Ordinance Availability: Cs§§ Population | Uint32 | 0 | The minimum Cs§§ population for this ordinance to become available. |
+| 0x6B23D805 | Ordinance Availability: Cs§§§ Population | Uint32 | 0 | The minimum Cs§§§ population for this ordinance to become available. |
+| 0x6B23D806 | Ordinance Availability: Co§§ Population | Uint32 | 0 | The minimum Co§§ population for this ordinance to become available. |
+| 0x6B23D807 | Ordinance Availability: Co§§§ Population | Uint32 | 0 | The minimum Co§§§ population for this ordinance to become available. |
+| 0x6B23D808 | Ordinance Availability: IR Population | Uint32 | 0 | The minimum IR population for this ordinance to become available. |
+| 0x6B23D809 | Ordinance Availability: ID Population | Uint32 | 0 | The minimum ID population for this ordinance to become available. |
+| 0x6B23D80A | Ordinance Availability: IM Population | Uint32 | 0 | The minimum IM population for this ordinance to become available. |
+| 0x6B23D80B | Ordinance Availability: IHT Population | Uint32 | 0 | The minimum IHT population for this ordinance to become available. |
+| 0x6B23D820 | Ordinance Availability: Fire Station Count | Uint32 | 0 | The minimum number of fire stations for this ordinance to become available. |
+| 0x6B23D821 | Ordinance Availability: Hospital Count | Uint32 | 0 | The minimum number of hospital buildings for this ordinance to become available. |
+| 0x6B23D822 | Ordinance Availability: Jail Count | Uint32 | 0 | The minimum number of jails for this ordinance to become available. |
+| 0x6B23D823 | Ordinance Availability: Police Station Count | Uint32 | 0 | The minimum number of police stations for this ordinance to become available. |
+| 0x6B23D824 | Ordinance Availability: School Building Count | Uint32 | 0 | The minimum number of school buildings for this ordinance to become available. |
+| 0x6B23D830 | Ordinance Availability: Lua Function | String | n/a | The name of a Lua function that determines when this ordinance becomes available. See the _Lua Function_ section below. |
 
 ### Lua Availability Condition Function
 
@@ -57,29 +57,31 @@ return game.ga_mayor_rating >= 50
 end
 ```
 
-## Monthly Income Factor Properties
+## Monthly Income Properties
+
+These properties control how the ordinance monthly expense/income is calculated.
 
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
 | 0x28EBBC3A | Monthly Income Factor | Float32 | 0 | Factor applied to the total residential population. Takes precedence over the residential wealth group properties. |
-| 0x6B23D900 | R§ Population Income Factor | Float32 | 0 | Factor applied to the R§ population. |
-| 0x6B23D901 | R§§ Population Income Factor | Float32 | 0 | Factor applied to the R§§ population. |
-| 0x6B23D902 | R§§§ Population Income Factor | Float32 | 0 | Factor applied to the R§§§ population. |
-| 0x6B23D903 | Cs§ Population Income Factor | Float32 | 0 | Factor applied to the Cs§ population. |
-| 0x6B23D904 | Cs§§ Population Income Factor | Float32 | 0 | Factor applied to the Cs§§ population. |
-| 0x6B23D905 | Cs§§§ Population Income Factor | Float32 | 0 | Factor applied to the Cs§§§ population. |
-| 0x6B23D906 | Co§§ Population Income Factor | Float32 | 0 | Factor applied to the Co§§ population. |
-| 0x6B23D907 | Co§§§ Population Income Factor | Float32 | 0 | Factor applied to the Co§§§ population. |
-| 0x6B23D908 | IR Population Income Factor | Float32 | 0 | Factor applied to the IR population. |
-| 0x6B23D909 | ID Population Income Factor | Float32 | 0 | Factor applied to the ID population. |
-| 0x6B23D90A | IM Population Income Factor | Float32 | 0 | Factor applied to the IM population. |
-| 0x6B23D90B | IHT Population Income Factor| Float32 | 0 | Factor applied to the IHT population. |
-| 0x6B23D920 | Fire Station Count Income Factor | Float32 | 0 | Factor applied to the number of fire stations. |
-| 0x6B23D921 | Hospital Count Income Factor | Float32 | 0 | Factor applied to the number of hospital buildings. |
-| 0x6B23D922 | Jail Count Income Factor | Float32 | 0 | Factor applied to the number of jails. |
-| 0x6B23D923 | Police Station Count Income Factor | Float32 | 0 | Factor applied to the number of police stations. |
-| 0x6B23D924 | School Building Count Income Factor | Float32 | 0 | Factor applied to the number of school buildings. |
-| 0x6B23D930 | Lua Monthly Income Function | String | n/a | The name of a Lua function that calculates the monthly income. See the _Lua Monthly Income Function_ section below. |
+| 0x6B23D900 | Ordinance Monthly Income: R§ Population Factor | Float32 | 0 | Factor applied to the R§ population. |
+| 0x6B23D901 | Ordinance Monthly Income: R§§ Population Factor | Float32 | 0 | Factor applied to the R§§ population. |
+| 0x6B23D902 | Ordinance Monthly Income: R§§§ Population Factor | Float32 | 0 | Factor applied to the R§§§ population. |
+| 0x6B23D903 | Ordinance Monthly Income: Cs§ Population Factor | Float32 | 0 | Factor applied to the Cs§ population. |
+| 0x6B23D904 | Ordinance Monthly Income: Cs§§ Population Factor | Float32 | 0 | Factor applied to the Cs§§ population. |
+| 0x6B23D905 | Ordinance Monthly Income: Cs§§§ Population Factor | Float32 | 0 | Factor applied to the Cs§§§ population. |
+| 0x6B23D906 | Ordinance Monthly Income: Co§§ Population Factor | Float32 | 0 | Factor applied to the Co§§ population. |
+| 0x6B23D907 | Ordinance Monthly Income: Co§§§ Population Factor | Float32 | 0 | Factor applied to the Co§§§ population. |
+| 0x6B23D908 | Ordinance Monthly Income: IR Population Factor | Float32 | 0 | Factor applied to the IR population. |
+| 0x6B23D909 | Ordinance Monthly Income: ID Population Factor | Float32 | 0 | Factor applied to the ID population. |
+| 0x6B23D90A | Ordinance Monthly Income: IM Population Factor | Float32 | 0 | Factor applied to the IM population. |
+| 0x6B23D90B | Ordinance Monthly Income: IHT Population Factor| Float32 | 0 | Factor applied to the IHT population. |
+| 0x6B23D920 | Ordinance Monthly Income: Fire Station Factor | Float32 | 0 | Factor applied to the number of fire stations. |
+| 0x6B23D921 | Ordinance Monthly Income: Hospital Factor | Float32 | 0 | Factor applied to the number of hospital buildings. |
+| 0x6B23D922 | Ordinance Monthly Income: Jail Factor | Float32 | 0 | Factor applied to the number of jails. |
+| 0x6B23D923 | Ordinance Monthly Income: Police Station Factor | Float32 | 0 | Factor applied to the number of police stations. |
+| 0x6B23D924 | Ordinance Monthly Income: School Building Factor | Float32 | 0 | Factor applied to the number of school buildings. |
+| 0x6B23D930 | Ordinance Monthly Income: Lua Function | String | n/a | The name of a Lua function that calculates the monthly income. See the _Lua Monthly Income Function_ section below. |
 
 
 ### Lua Monthly Income Function
