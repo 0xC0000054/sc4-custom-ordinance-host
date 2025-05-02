@@ -4310,91 +4310,91 @@ The minimum number of school buildings for this ordinance to become available.
 The name of a Lua function that checks the conditions for this ordinance to become available. Must have a unique name, take no parameters, and return a Boolean.
 </HELP>
   </PROPERTY>
-    <PROPERTY Name="Ordinance Monthly Income Factor: R$ Population" ID="0x6b23d900" Type="Float32" ShowAsHex="N">
+    <PROPERTY Name="Ordinance Monthly Income: R$ Population Factor" ID="0x6b23d900" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the R$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: R$$ Population" ID="0x6b23d901" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: R$$ Population Factor" ID="0x6b23d901" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the R$$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: R$$$ Population" ID="0x6b23d902" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: R$$$ Population Factor" ID="0x6b23d902" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the R$$$ population.
 </HELP>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Cs$ Population" ID="0x6b23d903" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Cs$ Population Factor" ID="0x6b23d903" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Cs$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Cs$$ Population" ID="0x6b23d904" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Cs$$ Population Factor" ID="0x6b23d904" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Cs$$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Cs$$$ Population" ID="0x6b23d905" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Cs$$$ Population Factor" ID="0x6b23d905" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Cs$$$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Co$$ Population" ID="0x6b23d906" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Co$$ Population Factor" ID="0x6b23d906" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Co$$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Co$$$ Population" ID="0x6b23d907" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Co$$$ Population Factor" ID="0x6b23d907" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the Co$$$ population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: IR Population" ID="0x6b23d908" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: IR Population Factor" ID="0x6b23d908" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the IR population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: ID Population" ID="0x6b23d909" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: ID Population Factor" ID="0x6b23d909" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the ID population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: IM Population" ID="0x6b23d90a" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: IM Population Factor" ID="0x6b23d90a" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the IM population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: IHT Population" ID="0x6b23d90b" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: IHT Population Factor" ID="0x6b23d90b" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the IHT population.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Fire Station Count" ID="0x6b23d920" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Fire Station Factor" ID="0x6b23d920" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the number of fire stations.
 </HELP>
   </PROPERTY>
-    <PROPERTY Name="Ordinance Monthly Income Factor: Hospital Count" ID="0x6b23d921" Type="Float32" ShowAsHex="N">
+    <PROPERTY Name="Ordinance Monthly Income: Hospital Factor" ID="0x6b23d921" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the number of hospital buildings.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Jail Count" ID="0x6b23d922" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Jail Factor" ID="0x6b23d922" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the number of jails.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Police Station Count" ID="0x6b23d923" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: Police Station Factor" ID="0x6b23d923" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the number of police stations.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: School Count" ID="0x6b23d924" Type="Float32" ShowAsHex="N">
+  <PROPERTY Name="Ordinance Monthly Income: School Factor" ID="0x6b23d924" Type="Float32" ShowAsHex="N">
     <HELP>
 Factor applied to the ordinance cost based on the number of school buildings.
 </HELP>
   </PROPERTY>
-  <PROPERTY Name="Ordinance Monthly Income Factor: Lua Function" ID="0x6b23d930" Type="String">
+  <PROPERTY Name="Ordinance Monthly Income: Lua Function" ID="0x6b23d930" Type="String">
     <HELP>
 The name of a Lua function that that calculates the monthly income. Must have a unique name, take the monthly constant income as a parameter, and return the calculated monthly expense/income for the ordinance.
 </HELP>
