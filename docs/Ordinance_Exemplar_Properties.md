@@ -20,14 +20,14 @@ These properties can be used to control when the game makes the ordinance availa
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
 | 0x28EBBC35 | Year Available | Uint32 | 0 | Year this ordinance becomes available. Must be greater than 2000 (SC4's starting year). |
-| 0x6B23D800 | Ordinance Availability: R§ Population | Uint32 | 0 | The minimum R§ population for this ordinance to become available. |
-| 0x6B23D801 | Ordinance Availability: R§§ Population | Uint32 | 0 | The minimum R§§ population for this ordinance to become available. |
-| 0x6B23D802 | Ordinance Availability: R§§§ Population | Uint32 | 0 | The minimum R§§§ population for this ordinance to become available. |
-| 0x6B23D803 | Ordinance Availability: Cs§ Population | Uint32 | 0 | The minimum Cs§ population for this ordinance to become available. |
-| 0x6B23D804 | Ordinance Availability: Cs§§ Population | Uint32 | 0 | The minimum Cs§§ population for this ordinance to become available. |
-| 0x6B23D805 | Ordinance Availability: Cs§§§ Population | Uint32 | 0 | The minimum Cs§§§ population for this ordinance to become available. |
-| 0x6B23D806 | Ordinance Availability: Co§§ Population | Uint32 | 0 | The minimum Co§§ population for this ordinance to become available. |
-| 0x6B23D807 | Ordinance Availability: Co§§§ Population | Uint32 | 0 | The minimum Co§§§ population for this ordinance to become available. |
+| 0x6B23D800 | Ordinance Availability: R$ Population | Uint32 | 0 | The minimum R$ population for this ordinance to become available. |
+| 0x6B23D801 | Ordinance Availability: R$$ Population | Uint32 | 0 | The minimum R$$ population for this ordinance to become available. |
+| 0x6B23D802 | Ordinance Availability: R$$$ Population | Uint32 | 0 | The minimum R$$$ population for this ordinance to become available. |
+| 0x6B23D803 | Ordinance Availability: Cs$ Population | Uint32 | 0 | The minimum Cs$ population for this ordinance to become available. |
+| 0x6B23D804 | Ordinance Availability: Cs$$ Population | Uint32 | 0 | The minimum Cs$$ population for this ordinance to become available. |
+| 0x6B23D805 | Ordinance Availability: Cs$$$ Population | Uint32 | 0 | The minimum Cs$$$ population for this ordinance to become available. |
+| 0x6B23D806 | Ordinance Availability: Co$$ Population | Uint32 | 0 | The minimum Co$$ population for this ordinance to become available. |
+| 0x6B23D807 | Ordinance Availability: Co$$$ Population | Uint32 | 0 | The minimum Co$$$ population for this ordinance to become available. |
 | 0x6B23D808 | Ordinance Availability: IR Population | Uint32 | 0 | The minimum IR population for this ordinance to become available. |
 | 0x6B23D809 | Ordinance Availability: ID Population | Uint32 | 0 | The minimum ID population for this ordinance to become available. |
 | 0x6B23D80A | Ordinance Availability: IM Population | Uint32 | 0 | The minimum IM population for this ordinance to become available. |
@@ -64,14 +64,14 @@ These properties control how the ordinance monthly expense/income is calculated.
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
 | 0x28EBBC3A | Monthly Income Factor | Float32 | 0 | Factor applied to the total residential population. Takes precedence over the residential wealth group properties. |
-| 0x6B23D900 | Ordinance Monthly Income: R§ Population Factor | Float32 | 0 | Factor applied to the R§ population. |
-| 0x6B23D901 | Ordinance Monthly Income: R§§ Population Factor | Float32 | 0 | Factor applied to the R§§ population. |
-| 0x6B23D902 | Ordinance Monthly Income: R§§§ Population Factor | Float32 | 0 | Factor applied to the R§§§ population. |
-| 0x6B23D903 | Ordinance Monthly Income: Cs§ Population Factor | Float32 | 0 | Factor applied to the Cs§ population. |
-| 0x6B23D904 | Ordinance Monthly Income: Cs§§ Population Factor | Float32 | 0 | Factor applied to the Cs§§ population. |
-| 0x6B23D905 | Ordinance Monthly Income: Cs§§§ Population Factor | Float32 | 0 | Factor applied to the Cs§§§ population. |
-| 0x6B23D906 | Ordinance Monthly Income: Co§§ Population Factor | Float32 | 0 | Factor applied to the Co§§ population. |
-| 0x6B23D907 | Ordinance Monthly Income: Co§§§ Population Factor | Float32 | 0 | Factor applied to the Co§§§ population. |
+| 0x6B23D900 | Ordinance Monthly Income: R$ Population Factor | Float32 | 0 | Factor applied to the R$ population. |
+| 0x6B23D901 | Ordinance Monthly Income: R$$ Population Factor | Float32 | 0 | Factor applied to the R$$ population. |
+| 0x6B23D902 | Ordinance Monthly Income: R$$$ Population Factor | Float32 | 0 | Factor applied to the R$$$ population. |
+| 0x6B23D903 | Ordinance Monthly Income: Cs$ Population Factor | Float32 | 0 | Factor applied to the Cs$ population. |
+| 0x6B23D904 | Ordinance Monthly Income: Cs$$ Population Factor | Float32 | 0 | Factor applied to the Cs$$ population. |
+| 0x6B23D905 | Ordinance Monthly Income: Cs$$$ Population Factor | Float32 | 0 | Factor applied to the Cs$$$ population. |
+| 0x6B23D906 | Ordinance Monthly Income: Co$$ Population Factor | Float32 | 0 | Factor applied to the Co$$ population. |
+| 0x6B23D907 | Ordinance Monthly Income: Co$$$ Population Factor | Float32 | 0 | Factor applied to the Co$$$ population. |
 | 0x6B23D908 | Ordinance Monthly Income: IR Population Factor | Float32 | 0 | Factor applied to the IR population. |
 | 0x6B23D909 | Ordinance Monthly Income: ID Population Factor | Float32 | 0 | Factor applied to the ID population. |
 | 0x6B23D90A | Ordinance Monthly Income: IM Population Factor | Float32 | 0 | Factor applied to the IM population. |
@@ -98,7 +98,7 @@ The monthly income factor function takes the monthly constant income/expense as 
 ```lua
 -- The scoh prefix used in this example is the initials for the DLL's name, SC4CustomOrdinanceHost.
 function scoh_get_monthly_income(monthlyConstantIncome)
--- Add 1 § in extra income for ever 1000 sims in the RCI population.
+-- Add 1 $ in extra income for ever 1000 sims in the RCI population.
 local extra = game.g_city_rci_population * 0.001
 return monthlyConstantIncome + extra
 end
@@ -118,14 +118,14 @@ These are the possible ordinance effects that Maxis defined.
 | 0xe8f79c90 | Garbage Effect | Float32 | 0 | Effect (multiplier) this ordinance has on garbage. |
 | 0xa8f4eb0c | Water Use Reduction | Float32 | 0 | Effect (multiplier) this ordinance has on water use. |
 | 0x0911e117 | Power Reduction Effect | Float32 | 0 | Factor by which this ordinance reduces power consumption. |
-| 0x2a651010 | Demand Effect:R§ | Float32 | 0 | Factor applied to R§ demand. |
-| 0x2a651020 | Demand Effect:R§§ | Float32 | 0 | Factor applied to R§§ demand. |
-| 0x2a651030 | Demand Effect:R§§§ | Float32 | 0 | Factor applied to R§§§ demand. |
-| 0x2a653110 | Demand Effect:Cs§ | Float32 | 0 | Factor applied to Cs§ demand. |
-| 0x2a653120 | Demand Effect:Cs§§ | Float32 | 0 | Factor applied to Cs§§ demand. |
-| 0x2a653130 | Demand Effect:Cs§§§ | Float32 | 0 | Factor applied to Cs§§§ demand. |
-| 0x2a653320 | Demand Effect:Co§§ | Float32 | 0 | Factor applied to Co§§ demand. |
-| 0x2a653330 | Demand Effect:Co§§§ | Float32 | 0 | Factor applied to Co§§§ demand. |
+| 0x2a651010 | Demand Effect:R$ | Float32 | 0 | Factor applied to R$ demand. |
+| 0x2a651020 | Demand Effect:R$$ | Float32 | 0 | Factor applied to R$$ demand. |
+| 0x2a651030 | Demand Effect:R$$$ | Float32 | 0 | Factor applied to R$$$ demand. |
+| 0x2a653110 | Demand Effect:Cs$ | Float32 | 0 | Factor applied to Cs$ demand. |
+| 0x2a653120 | Demand Effect:Cs$$ | Float32 | 0 | Factor applied to Cs$$ demand. |
+| 0x2a653130 | Demand Effect:Cs$$$ | Float32 | 0 | Factor applied to Cs$$$ demand. |
+| 0x2a653320 | Demand Effect:Co$$ | Float32 | 0 | Factor applied to Co$$ demand. |
+| 0x2a653330 | Demand Effect:Co$$$ | Float32 | 0 | Factor applied to Co$$$ demand. |
 | 0x2a654100 | Demand Effect:IR | Float32 | 0 | Factor applied to IR demand. |
 | 0x2a654200 | Demand Effect:ID | Float32 | 0 | Factor applied to ID demand. |
 | 0x2a654300 | Demand Effect:IM | Float32 | 0 | Factor applied to IM demand. |
