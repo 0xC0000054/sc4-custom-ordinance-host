@@ -8,15 +8,15 @@ This DAT file defines a City Lottery income ordinance.
 
 ### Cost
 
-Enactment: § -10
-Retracment: § -10
+Enactment: § -10    
+Retracment: § -10    
 Monthly: § 500 + (<R§ population> x 0.05) + (<R§§ population> x 0.03) + (<R§§§ population> x 0.01)
 
 ### Effects
 
-Crime: +10%
-Cs$ demand: +1%
-Mayor Rating: +5
+Crime: +10%    
+Cs$ demand: +1%    
+Mayor Rating: +5    
 School EQ Boost: +2%
 
 ### Requirements
@@ -29,13 +29,13 @@ This DAT file defines a Humane Society expense ordinance.
 
 ### Cost
 
-Enactment: § -10
-Retracment: § -10
+Enactment: § -10    
+Retracment: § -10    
 Monthly: § -50 + (<hospital count> x -5)
 
 ### Effects
 
-Crime: -5%
+Crime: -5%    
 Mayor Rating: +5
 
 ### Requirements
@@ -48,13 +48,13 @@ This DAT file defines a Jewelry Tax income ordinance.
 
 ### Cost
 
-Enactment: § 0
-Retracment: § 0
+Enactment: § 0    
+Retracment: § 0    
 Monthly: § 20 + (<R§§§ population> x 0.1)
 
 ### Effects
 
-Crime: +2%
+Crime: +2%    
 R$$$ demand: -5%
 
 ### Requirements
@@ -67,13 +67,13 @@ This DAT file defines a Space Exploration Program expense ordinance.
 
 ### Cost
 
-Enactment: § -10
-Retracment: § -10
+Enactment: § -10    
+Retracment: § -10    
 Monthly: § -100 + (<IHT population> x -0.01)
 
 ### Effects
 
-IM demand: +0.33%
+IM demand: +0.33%    
 IHT demand: +0.83%
 
 ### Requirements
@@ -88,8 +88,8 @@ The Lua script is checked in separately from the DBPF file to take advantage of 
 
 ### Cost
 
-Enactment: § -10
-Retracment: § -10
+Enactment: § -10    
+Retracment: § -10    
 Monthly: § -50 + (<RCI population> x -0.001)
 
 ### Effects
