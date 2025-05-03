@@ -4,10 +4,6 @@ A DLL Plugin for SimCity 4 that allows new ordinances to be defined in ordinance
 
 The plugin can be downloaded from the Releases tab: https://github.com/0xC0000054/sc4-custom-ordinance-host/releases
 
-## Ordinance Location
-
-The ordinance DAT files must be installed in the root (or a sub-folder) of _Documents/SimCity 4/Plugins/140-ordinances_ for the DLL to find them.    
-
 ## Ordinance Exemplars
 
 Each ordinance exemplar is must have a unique instance id, this is how SC4 will identify the ordinance.
@@ -35,8 +31,12 @@ installed, but I do not have the ability to test that.
 ## Installation
 
 1. Close SimCity 4.
-2. Copy `SC4CustomOrdinanceHost.dll` into the Plugins folder in the SimCity 4 installation directory.
+2. Copy `SC4CustomOrdinanceHost.dll` the top-level of the Plugins folder in the SimCity 4 installation directory or Documents/SimCity 4 directory.
 3. Start SimCity 4.
+
+### Installing New Ordinances
+
+The ordinance DAT files must be installed in _Documents/SimCity 4/Plugins/140-ordinances_ (or a sub-folder).
 
 ## Troubleshooting
 
