@@ -315,10 +315,9 @@ public:
 
 	void EnumClassObjects(ClassObjectEnumerationCallback pCallback, void* pContext) override
 	{
-		// The classes you want to add must be initialized in the DLL constructor because
-		// the framework calls this method before OnStart or any of the hook callbacks.
-		// This method is called once when initializing a director, the list of class IDs
-		// it returns is cached by the framework.
+		// The framework calls this method once when initializing a director, after
+		// InitializeCOM and before OnStart.
+		// The list of class IDs it returns is cached by the framework.
 
 		LoadCustomOrdinances();
 
