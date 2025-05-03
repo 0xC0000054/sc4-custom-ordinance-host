@@ -194,12 +194,56 @@ namespace
 								pState->ordinanceKeys.emplace(key);
 							}
 						}
+						else
+						{
+							Logger::GetInstance().WriteLineFormatted(
+								LogLevel::Error,
+								"Exemplar 0x%08x, 0x%08x, 0x%08x does not have an ExemplarType of Ordinance.",
+								key.type,
+								key.group,
+								key.instance);
+						}
 					}
-
+					else
+					{
+						Logger::GetInstance().WriteLineFormatted(
+							LogLevel::Error,
+							"Exemplar 0x%08x, 0x%08x, 0x%08x does not have an ExemplarType property.",
+							key.type,
+							key.group,
+							key.instance);
+					}
+				}
+				else
+				{
+					Logger::GetInstance().WriteLineFormatted(
+						LogLevel::Error,
+						"Failed to parse 0x%08x, 0x%08x, 0x%08x.",
+						key.type,
+						key.group,
+						key.instance);
 				}
 
 				segment->CloseRecord(record);
 			}
+			else
+			{
+				Logger::GetInstance().WriteLineFormatted(
+					LogLevel::Error,
+					"Failed to open DBPF record 0x%08x, 0x%08x, 0x%08x.",
+					key.type,
+					key.group,
+					key.instance);
+			}
+		}
+		else
+		{
+			Logger::GetInstance().WriteLineFormatted(
+				LogLevel::Error,
+				"Failed to open the DBPF file for 0x%08x, 0x%08x, 0x%08x.",
+				key.type,
+				key.group,
+				key.instance);
 		}
 	}
 }
