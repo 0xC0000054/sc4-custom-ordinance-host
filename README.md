@@ -12,6 +12,9 @@ The ordinance DAT files must be installed in the root (or a sub-folder) of _Docu
 
 The documentation is on the [Ordinance Exemplar Properties](docs/Ordinance_Exemplar_Properties.md) page.
 
+The ordinance exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
+Because of this, the ordinance tuning should be done in a new city or in an existing city without saving.
+
 ## System Requirements
 
 * Windows 10 or later
