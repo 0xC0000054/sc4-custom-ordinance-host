@@ -8,12 +8,22 @@ The plugin can be downloaded from the Releases tab: https://github.com/0xC000005
 
 The ordinance DAT files must be installed in the root (or a sub-folder) of _Documents/SimCity 4/Plugins/140-ordinances_ for the DLL to find them.    
 
-## Ordinance Exemplar Properties
+## Ordinance Exemplars
+
+Each ordinance exemplar is must have a unique instance id, this is how SC4 will identify the ordinance.
+The ordinance exemplar must have an _ExemplarType_ property with the value set to Ordinances.
+
+### Ordinance Exemplar Properties
 
 The documentation is on the [Ordinance Exemplar Properties](docs/Ordinance_Exemplar_Properties.md) page.
 
-The ordinance exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
+The exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
 Because of this, the ordinance tuning should be done in a new city or in an existing city without saving.
+
+### Example Ordinances
+
+The [examples](examples) directory contains several ordinances that can be used as-is or as a guide for creating your own ordinances.
+See the [read-me](examples/README.md) in that directory for more information on those ordinances.
 
 ## System Requirements
 
