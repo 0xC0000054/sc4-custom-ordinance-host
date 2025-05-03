@@ -405,10 +405,6 @@ private:
 					{
 						PathCombine(tempPath, "140-ordinances\\");
 						path = std::move(tempPath);
-
-#ifdef _DEBUG
-						DebugUtil::PrintLineToDebugOutput(path);
-#endif // _DEBUG
 					}
 				}
 			}
@@ -420,12 +416,16 @@ private:
 
 	void LoadCustomOrdinances()
 	{
+		Logger& logger = Logger::GetInstance();
+
 		customOrdinanceResourceKeys.clear();
 
 		const cRZBaseString customOrdinanceDir = GetCustomOrdinanceDirectoryPath();
 
 		if (customOrdinanceDir.Strlen() > 0)
 		{
+			logger.WriteLineFormatted(LogLevel::Info, "Ordinance folder path=%s", customOrdinanceDir.ToChar());
+
 			cRZAutoRefCount<cIGZPersistDBSegment> customOrdinanceFiles;
 
 			if (mpCOM->GetClassObject(
@@ -497,6 +497,15 @@ private:
 					customOrdinanceFiles->Shutdown();
 				}
 			}
+
+			logger.WriteLineFormatted(
+				LogLevel::Info,
+				"Found %u ordinance exemplars.",
+				customOrdinanceResourceKeys.size());
+		}
+		else
+		{
+			logger.WriteLine(LogLevel::Error, "Unable to detect the custom ordinance path.");
 		}
 	}
 
