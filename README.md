@@ -6,7 +6,7 @@ The plugin can be downloaded from the Releases tab: https://github.com/0xC000005
 
 ## Ordinance Exemplars
 
-Each ordinance exemplar is must have a unique instance id, this is how SC4 will identify the ordinance.
+Each ordinance exemplar must have a unique instance id, this is how SC4 will identify the ordinance.
 The ordinance exemplar must have an _ExemplarType_ property with the value set to Ordinances.
 
 ### Ordinance Exemplar Properties
