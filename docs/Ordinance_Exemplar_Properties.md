@@ -1,6 +1,28 @@
 # Ordinance Exemplar Properties
 
+This page lists all of the ordinance exemplar properties that are supported by the DLL.
+
+The exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
+Because of this, the ordinance tuning should be done in a new city or in an existing city without saving.
+
+<!--TOC-->
+  - [General Properties](#general-properties)
+  - [Availability Condition Properties](#availability-condition-properties)
+    - [Lua Availability Condition Function](#lua-availability-condition-function)
+  - [Monthly Income Properties](#monthly-income-properties)
+    - [Lua Monthly Income Function](#lua-monthly-income-function)
+  - [Ordinance Effects](#ordinance-effects)
+<!--/TOC-->
+
 ## General Properties
+
+These are the common properties used by all ordinance exemplars.
+
+The _Name Key_ and _Description Key_ properties should be preferred over the _Name String (non-localizable)_
+and _Description String (non-localizable)_ properties for plugins that are publicly distributed.    
+The LTEXT files that _Name Key_ and _Description Key_ point to can have multiple versions that support different languages.
+
+The _Income Ordinance_ property is optional for expense ordinances, but there is no harm in adding it with the value set to _false_.
 
 | ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
@@ -16,6 +38,10 @@
 ## Availability Condition Properties
 
 These properties can be used to control when the game makes the ordinance available.
+
+_Ordinance Availability: Lua Function_ can only be used by itself, but all other properties can be 
+can be combined to form more complex conditions.
+When using multiple properties, the order in which they are evaluated is undefined.
 
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
@@ -60,6 +86,14 @@ end
 ## Monthly Income Properties
 
 These properties control how the ordinance monthly expense/income is calculated.
+
+_Ordinance Monthly Income: Lua Function_ can only be used by itself, but most other properties can be
+combined to form more complex conditions.
+
+_Monthly Income Factor_ is applied to the total residential population, this is equivalent to the behavior of the Maxis _CPR Training_ ordinance.
+_Monthly Income Factor_ cannot be used with the _R$ Population Factor_, _R$$ Population Factor_, or _R$$$ Population Factor_ properties.
+
+When using multiple properties, the order in which they are evaluated is undefined.
 
  ID | Name | Type | Reps | Description |
 |----|------|------|------|-------------|
