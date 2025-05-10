@@ -363,7 +363,7 @@ private:
 
 			if (pOrdinanceSim)
 			{
-				for (auto& key : customOrdinanceResourceKeys)
+				for (const auto& key : customOrdinanceResourceKeys)
 				{
 					cISC4Ordinance* pOrdinance = pOrdinanceSim->GetOrdinanceByID(key.instance);
 
