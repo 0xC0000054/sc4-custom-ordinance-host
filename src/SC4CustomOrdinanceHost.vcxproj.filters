@@ -54,9 +54,6 @@
     <ClInclude Include="PersistResourceKeyFilterByType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PersistResourceKeyHash.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CustomOrdinance.h">
       <Filter>Header Files</Filter>
     </ClInclude>

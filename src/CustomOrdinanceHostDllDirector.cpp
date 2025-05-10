@@ -53,7 +53,6 @@
 #include "GlobalPointers.h"
 #include "GZServPtrs.h"
 #include "PersistResourceKeyFilterByType.h"
-#include "PersistResourceKeyHash.h"
 #include "SCPropertyUtil.h"
 
 #include "frozen/unordered_set.h"
@@ -132,11 +131,30 @@ namespace
 		0xC2BF1DC5, // Youth Curfew
 	};
 
+	struct PersistResourceKeyInstanceHash
+	{
+		std::size_t operator()(const cGZPersistResourceKey& key) const noexcept
+		{
+			return key.instance;
+		}
+	};
+
+	struct PersistResourceKeyInstanceEqual
+	{
+		constexpr bool operator()(const cGZPersistResourceKey& lhs, const cGZPersistResourceKey& rhs) const
+		{
+			return lhs.instance == rhs.instance;
+		}
+	};
+
 	struct EnumResourceKeyContext
 	{
 		cIGZPersistDBSegmentMultiPackedFiles* pMultiPackedFile;
 		cIGZPersistResourceFactory* pExemplarResourceFactory;
-		std::unordered_set<cGZPersistResourceKey> ordinanceKeys;
+		std::unordered_set<
+			cGZPersistResourceKey,
+			PersistResourceKeyInstanceHash,
+			PersistResourceKeyInstanceEqual> ordinanceKeys;
 
 		EnumResourceKeyContext(
 			cIGZPersistDBSegmentMultiPackedFiles* pMultiPackedFile,

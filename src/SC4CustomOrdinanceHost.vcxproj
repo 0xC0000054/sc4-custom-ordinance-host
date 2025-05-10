@@ -47,7 +47,6 @@
     <ClInclude Include="monthly-income-factors\TotalResidentialPopulationIncomeFactor.h" />
     <ClInclude Include="OrdiancePropertyIDs.h" />
     <ClInclude Include="PersistResourceKeyFilterByType.h" />
-    <ClInclude Include="PersistResourceKeyHash.h" />
     <ClInclude Include="PopulationProvider.h" />
     <ClInclude Include="RCIGroup.h" />
     <ClInclude Include="resource.h" />
