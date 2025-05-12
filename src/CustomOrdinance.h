@@ -233,6 +233,12 @@ private:
 		uint32_t id,
 		RCIGroup type);
 
+	// The int64_t fields are first to eliminate 8 bytes of alignment padding.
+
+	int64_t enactmentIncome;
+	int64_t retracmentIncome;
+	int64_t monthlyConstantIncome;
+	int64_t monthlyAdjustedIncome;
 	cGZPersistResourceKey ordinanceExemplarKey;
 	std::vector<std::unique_ptr<IAvailabilityCondition>> availabilityConditions;
 	std::vector<std::unique_ptr<IMonthlyIncomeFactor>> monthlyIncomeFactors;
@@ -240,12 +246,8 @@ private:
 	StringResourceKey nameKey;
 	cRZBaseString description;
 	StringResourceKey descriptionKey;
-	int64_t enactmentIncome;
-	int64_t retracmentIncome;
-	int64_t monthlyConstantIncome;
-	int64_t monthlyAdjustedIncome;
-	bool isIncomeOrdinance;
 	ExemplarPropertyHolder miscProperties;
+	bool isIncomeOrdinance;
 	bool available;
 	bool on;
 	bool enabled;
