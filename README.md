@@ -53,6 +53,7 @@ See [LICENSE.txt](LICENSE.txt) for more information.
 [gzcom-dll](https://github.com/nsgomez/gzcom-dll/tree/master) - MIT License.    
 [Windows Implementation Library](https://github.com/microsoft/wil) - MIT License   
 [Frozen](https://github.com/serge-sans-paille/frozen) - Apache 2.0 License   
+[SafeInt](https://github.com/dcleblanc/SafeInt) - MIT License   
 
 # Source Code
 

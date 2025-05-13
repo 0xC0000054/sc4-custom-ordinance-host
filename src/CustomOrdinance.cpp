@@ -29,9 +29,11 @@
 #include "cRZAutoRefCount.h"
 #include "GlobalPointers.h"
 #include "GZStreamUtil.h"
+#include "Logger.h"
 #include "OrdiancePropertyIDs.h"
 #include "SCPropertyUtil.h"
 #include "SC4Percentage.h"
+#include "SafeInt.hpp"
 #include "StringResourceManager.h"
 #include <algorithm>
 #include <array>
@@ -378,17 +380,19 @@ int64_t CustomOrdinance::GetCurrentMonthlyIncome(void)
 
 	int64_t monthlyIncomeInteger = 0;
 
-	if (monthlyIncome < std::numeric_limits<int64_t>::min())
+	if (!SafeCast(monthlyIncome, monthlyIncomeInteger))
 	{
-		monthlyIncomeInteger = std::numeric_limits<int64_t>::min();
-	}
-	else if (monthlyIncome > std::numeric_limits<int64_t>::max())
-	{
-		monthlyIncomeInteger = std::numeric_limits<int64_t>::max();
-	}
-	else
-	{
-		monthlyIncomeInteger = static_cast<int64_t>(monthlyIncome);
+		monthlyIncomeInteger = monthlyConstantIncome;
+
+		Logger::GetInstance().WriteLineFormatted(
+			LogLevel::Error,
+			"Error when calculating the monthly income for '%s' (TGI 0x%08x, 0x%08x, 0x%08x), "
+			"%f cannot be represented as a signed 64-bit integer. Returning the monthly constant income.",
+			name.ToChar(),
+			ordinanceExemplarKey.type,
+			ordinanceExemplarKey.group,
+			ordinanceExemplarKey.instance,
+			monthlyIncome);
 	}
 
 	return monthlyIncomeInteger;

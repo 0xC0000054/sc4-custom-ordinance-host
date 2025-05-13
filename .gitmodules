@@ -7,3 +7,6 @@
 [submodule "vendor/wil"]
 	path = vendor/wil
 	url = https://github.com/microsoft/wil.git
+[submodule "vendor/SafeInt"]
+	path = vendor/SafeInt
+	url = https://github.com/dcleblanc/SafeInt.git
