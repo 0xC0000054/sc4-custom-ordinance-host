@@ -172,7 +172,7 @@ namespace
 		constexpr uint32_t kExemplarType_Ordinance = 14;
 		constexpr uint32_t kMaxisOrdinanceGroupID = 0xA9C2C209;
 
-		if (key.group == kMaxisOrdinanceGroupID && MaxisOrdinanceCLSIDs.contains(key.instance))
+		if (MaxisOrdinanceCLSIDs.contains(key.instance) && key.group == kMaxisOrdinanceGroupID)
 		{
 			// Overrides of the Maxis ordinances are silently ignored.
 			return;
