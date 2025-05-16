@@ -170,6 +170,13 @@ namespace
 	{
 		constexpr uint32_t kExemplarType = 0x10;
 		constexpr uint32_t kExemplarType_Ordinance = 14;
+		constexpr uint32_t kMaxisOrdinanceGroupID = 0xA9C2C209;
+
+		if (key.group == kMaxisOrdinanceGroupID && MaxisOrdinanceCLSIDs.contains(key.instance))
+		{
+			// Overrides of the Maxis ordinances are silently ignored.
+			return;
+		}
 
 		EnumResourceKeyContext* pState = static_cast<EnumResourceKeyContext*>(pContext);
 
