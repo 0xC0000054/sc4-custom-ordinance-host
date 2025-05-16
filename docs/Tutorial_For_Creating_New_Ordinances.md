@@ -1,25 +1,24 @@
 # Tutorial for Creating New Ordinances
 
 This tutorial covers the basic steps required to create a new ordinance for use with this plugin.
-<!--TOC-->
-  - [Extracting an Ordinance Exemplar From SimCity_1.dat](#extracting-an-ordinance-exemplar-from-simcity_1.dat)
-    - [Step 1](#step-1)
-    - [Step 2](#step-2)
-    - [Step 3](#step-3)
-    - [Step 4](#step-4)
-  - [Changing the Exemplar and LTEXT Instance IDs](#changing-the-exemplar-and-ltext-instance-ids)
-    - [Step 1](#step-1-1)
-    - [Step 2](#step-2-1)
-  - [Updating the Ordinance Name and Description](#updating-the-ordinance-name-and-description)
-    - [Step 1](#step-1-2)
-    - [Step 2](#step-2-2)
-    - [Step 3](#step-3-1)
-    - [Step 4 - Optional](#step-4-optional)
-  - [Configuring the Ordinance Properties](#configuring-the-ordinance-properties)
-    - [Adding New Properties](#adding-new-properties)
-    - [Removing Existing Properties](#removing-existing-properties)
-<!--/TOC-->
 
+- [Extracting an Ordinance Exemplar From SimCity_1.dat](#extracting-an-ordinance-exemplar-from-simcity_1.dat)
+  - [Step 1](#step-1)
+  - [Step 2](#step-2)
+  - [Step 3](#step-3)
+  - [Step 4](#step-4)
+- [Changing the Exemplar and LTEXT Instance IDs](#changing-the-exemplar-and-ltext-instance-ids)
+  - [Step 1](#step-1-1)
+  - [Step 2](#step-2-1)
+- [Updating the Ordinance Name and Description](#updating-the-ordinance-name-and-description)
+  - [Step 1](#step-1-2)
+  - [Step 2](#step-2-2)
+  - [Step 3](#step-3-2)
+  - [Step 4 - Optional](#step-4-optional)
+- [Configuring the Ordinance Properties](#configuring-the-ordinance-properties)
+  - [Adding New Properties](#adding-new-properties)
+  - [Removing Existing Properties](#removing-existing-properties)
+- [Installing Custom Ordinances](#installing-custom-ordinances)
 
 ## Extracting an Ordinance Exemplar From SimCity_1.dat
 
@@ -115,4 +114,7 @@ Right click in the exemplar editing pane and select *Add property*.
 
 Click on the property to highlight it, then right click and select *Delete property*.
 
+## Installing Custom Ordinances
 
+The ordinance DAT files must be installed in *Documents/SimCity 4/Plugins/140-ordinances* (or a sub-folder).
+*SC4CustomOrdinanceHost.log* will contain the full path to that folder, and the number of ordinances that the DLL found.
