@@ -103,6 +103,10 @@ This is not required for the ordinance to function, but it makes it easer to tel
 
 See [Ordinance Exemplar Properties](Ordinance_Exemplar_Properties.md) for a list of the ordinance properties that can be customized.
 
+> [!IMPORTANT]
+> The ordinance tuning should be done in a new city or in an existing city without saving.    
+> The exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
+
 ### Adding New Properties
 
 Right click in the exemplar editing pane and select *Add property*.
