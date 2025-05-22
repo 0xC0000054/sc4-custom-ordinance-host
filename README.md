@@ -4,6 +4,15 @@ A DLL Plugin for SimCity 4 that allows new ordinances to be defined in ordinance
 
 The plugin can be downloaded from the Releases tab: https://github.com/0xC0000054/sc4-custom-ordinance-host/releases
 
+## Creating New Ordinances
+
+A tutorial on creating new ordinances is located at: [Tutorial for Creating New Ordinances](docs/Tutorial_For_Creating_New_Ordinances.md)
+
+### Example Ordinances
+
+The [examples](examples) directory contains several example ordinances that can be used as-is or as a starting point for creating your own ordinances.
+See the [read-me](examples/README.md) in that directory for more information on those ordinances.
+
 ## Ordinance Exemplars
 
 Each ordinance exemplar must have a unique instance id, this is how SC4 will identify the ordinance.
@@ -15,11 +24,6 @@ The documentation is on the [Ordinance Exemplar Properties](docs/Ordinance_Exemp
 
 The exemplar properties are persisted in the save game, and the exemplar will be ignored once the city has been saved.
 Because of this, the ordinance tuning should be done in a new city or in an existing city without saving.
-
-### Example Ordinances
-
-The [examples](examples) directory contains several ordinances that can be used as-is or as a guide for creating your own ordinances.
-See the [read-me](examples/README.md) in that directory for more information on those ordinances.
 
 ## System Requirements
 
