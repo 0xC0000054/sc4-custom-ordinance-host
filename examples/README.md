@@ -1,6 +1,28 @@
 # Examples
 
-This directory contains example DBPF files defining ordinance exemplars.
+This directory contains example DBPF files defining ordinance exemplars.    
+For instructions on creating new ordinances using these files as a template, see [Tutorial for Creating New Ordinances](../docs/Tutorial_For_Creating_New_Ordinances.md).
+
+- [CityLotteryOrdinance.dat](#citylotteryordinance.dat)
+  - [Cost](#cost)
+  - [Effects](#effects)
+  - [Requirements](#requirements)
+- [HumaneSocietyOrdinance.dat](#humanesocietyordinance.dat)
+  - [Cost](#cost-1)
+  - [Effects](#effects-1)
+  - [Requirements](#requirements-1)
+- [JewelryTax.dat](#jewelrytax.dat)
+  - [Cost](#cost-2)
+  - [Effects](#effects-2)
+  - [Requirements](#requirements-2)
+- [SpaceExplorationProgramOrdinance.dat](#spaceexplorationprogramordinance.dat)
+  - [Cost](#cost-3)
+  - [Effects](#effects-3)
+  - [Requirements](#requirements-3)
+- [LuaFunctionOrdinance.dat](#luafunctionordinance.dat)
+  - [Cost](#cost-4)
+  - [Effects](#effects-4)
+  - [Requirements](#requirements-4)
 
 ## CityLotteryOrdinance.dat
 
@@ -10,7 +32,7 @@ This DAT file defines a City Lottery income ordinance.
 
 Enactment: § -10    
 Retracment: § -10    
-Monthly: § 500 + (<R§ population> x 0.05) + (<R§§ population> x 0.03) + (<R§§§ population> x 0.01)
+Monthly: § 500 + (&lt;R§ population&gt; x 0.05) + (&lt;R§§ population&gt; x 0.03) + (&lt;R§§§ population&gt; x 0.01)
 
 ### Effects
 
@@ -31,7 +53,7 @@ This DAT file defines a Humane Society expense ordinance.
 
 Enactment: § -10    
 Retracment: § -10    
-Monthly: § -50 + (<hospital count> x -5)
+Monthly: § -50 + (&lt;hospital count&gt; x -5)
 
 ### Effects
 
@@ -50,7 +72,7 @@ This DAT file defines a Jewelry Tax income ordinance.
 
 Enactment: § 0    
 Retracment: § 0    
-Monthly: § 20 + (<R§§§ population> x 0.1)
+Monthly: § 20 + (&lt;R§§§ population&gt; x 0.1)
 
 ### Effects
 
@@ -69,7 +91,7 @@ This DAT file defines a Space Exploration Program expense ordinance.
 
 Enactment: § -10    
 Retracment: § -10    
-Monthly: § -100 + (<IHT population> x -0.01)
+Monthly: § -100 + (&lt;IHT population&gt; x -0.01)
 
 ### Effects
 
@@ -90,7 +112,7 @@ The Lua script is checked in separately from the DBPF file to take advantage of 
 
 Enactment: § -10    
 Retracment: § -10    
-Monthly: § -50 + (<RCI population> x -0.001)
+Monthly: § -50 + (&lt;RCI population&gt; x -0.001)
 
 ### Effects
 
