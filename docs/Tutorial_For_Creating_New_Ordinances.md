@@ -13,7 +13,7 @@ This tutorial covers the basic steps required to create a new ordinance for use 
 - [Updating the Ordinance Name and Description](#updating-the-ordinance-name-and-description)
   - [Step 1](#step-1-2)
   - [Step 2](#step-2-2)
-  - [Step 3](#step-3-2)
+  - [Step 3](#step-3-1)
   - [Step 4 - Optional](#step-4-optional)
 - [Configuring the Ordinance Properties](#configuring-the-ordinance-properties)
   - [Adding New Properties](#adding-new-properties)
