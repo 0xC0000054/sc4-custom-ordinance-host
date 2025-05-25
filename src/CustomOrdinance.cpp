@@ -156,15 +156,23 @@ namespace
 					break;
 				default:
 					assert(false);
-					break;
+					Logger::GetInstance().WriteLineFormatted(
+						LogLevel::Error,
+						"Unknown IAvailabilityCondition::Type value: %u",
+						type);
+					return false;
 				}
 
-				if (item && item->Read(stream))
+				if (item->Read(stream))
 				{
 					vector.push_back(std::move(item));
 				}
 				else
 				{
+					Logger::GetInstance().WriteLineFormatted(
+						LogLevel::Error,
+						"IAvailabilityCondition::Read failed for type %u.",
+						type);
 					return false;
 				}
 			}
@@ -215,15 +223,23 @@ namespace
 					break;
 				default:
 					assert(false);
-					break;
+					Logger::GetInstance().WriteLineFormatted(
+						LogLevel::Error,
+						"Unknown IMonthlyIncomeFactor::Type value: %u",
+						type);
+					return false;
 				}
 
-				if (item && item->Read(stream))
+				if (item->Read(stream))
 				{
 					vector.push_back(std::move(item));
 				}
 				else
 				{
+					Logger::GetInstance().WriteLineFormatted(
+						LogLevel::Error,
+						"IMonthlyIncomeFactor::Read failed for type %u.",
+						type);
 					return false;
 				}
 			}
